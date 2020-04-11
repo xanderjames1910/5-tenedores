@@ -4,8 +4,8 @@ import { Button, Icon, Input } from 'react-native-elements';
 import * as firebase from 'firebase';
 import { withNavigation } from 'react-navigation';
 
-import { validateEmail } from '../../utils/Validation';
-import Loading from '../Loading';
+import { validateEmail } from '../../../utils/Validation';
+import Loading from '../../Loading';
 
 const LoginForm = (props) => {
 	// Props destructuring
@@ -44,10 +44,7 @@ const LoginForm = (props) => {
 						navigation.navigate('Account');
 					})
 					.catch(() => {
-						toastRef.current.show(
-							'Email o contraseña incorrectos. Inténtalo nuevamente',
-							1500,
-						);
+						toastRef.current.show('Email o contraseña incorrectos', 1500);
 					});
 			}
 		}

@@ -3,7 +3,7 @@ import { Image, StyleSheet, Text, View } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import Toast from 'react-native-easy-toast';
 
-import RegisterForm from '../../components/Account/RegisterForm';
+import RegisterForm from '../../components/Account/Forms/RegisterForm';
 
 const Register = () => {
 	// Styles destructuring

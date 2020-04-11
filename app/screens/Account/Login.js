@@ -3,7 +3,7 @@ import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Divider } from 'react-native-elements';
 import Toast from 'react-native-easy-toast';
 
-import LoginForm from '../../components/Account/LoginForm';
+import LoginForm from '../../components/Account/Forms/LoginForm';
 import LoginFacebook from '../../components/Account/LoginFacebook';
 
 const Login = (props) => {
